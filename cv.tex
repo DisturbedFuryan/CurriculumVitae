@@ -1,9 +1,27 @@
 \documentclass[12pt,a4paper]{article}
 
-\usepackage{fullpage,graphicx}
+\usepackage{fullpage,graphicx,hyperref}
+
+\hypersetup{
+  colorlinks=true,
+  urlcolor=blue
+}
 
 \begin{document}
-
-\includegraphics{photo}
-
+  \noindent
+  \begin{minipage}[b]{0.4\textwidth}
+    \begin{center}
+      \includegraphics{photo}
+    \end{center}
+  \end{minipage}
+  \begin{minipage}[b]{0.6\textwidth}
+    {\huge \sc Marcin Rainka}
+    \begin{description} \itemsep3pt \parskip0pt \parsep0pt
+      \item[Address] Bitwy pod P\l{}owcami st. 64, 81-731 Sopot
+      \item[Date of Birth] 1st December 1989
+      \item[Phone Number] (+48) 533 637 455
+      \item[Email] \href{mailto:marcin.rainka@gmail.com}{marcin.rainka@gmail.com}
+      \item[Website] \url{https://inf.ug.edu.pl/~mrainka/}
+    \end{description}
+  \end{minipage}
 \end{document}
